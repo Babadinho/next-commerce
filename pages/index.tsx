@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Header from '@/layouts/Header';
+import Categories from '@/layouts/Categories';
 
 export default function Home() {
   return (
@@ -14,6 +15,10 @@ export default function Home() {
 
       <Navbar />
       <Header />
+      <div className='px-2 lg:px-0'>
+        {' '}
+        <Categories />
+      </div>
     </>
   );
 }
