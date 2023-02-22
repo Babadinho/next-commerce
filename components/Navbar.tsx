@@ -10,7 +10,7 @@ import {
 const Navbar = () => {
   return (
     <header className='sticky top-0 z-30 bg-[#E7ECEE] p-4'>
-      <div className='flex items-center justify-between max-w-[1350px] mx-auto'>
+      <div className='flex items-center justify-between max-w-[1250px] mx-auto'>
         <div className='flex items-center justify-center'>
           <Link href='/'>
             <p className='relative cursor-pointer font-bold text-lg'>
