@@ -9,7 +9,7 @@ import {
 
 const Navbar = () => {
   return (
-    <header className='sticky top-0 z-30 bg-[#E7ECEE] p-4'>
+    <header className='sticky top-0 z-30 bg-[#f7f9fa] p-5'>
       <div className='flex items-center justify-between max-w-[1250px] mx-auto'>
         <div className='flex items-center justify-center'>
           <Link href='/'>
