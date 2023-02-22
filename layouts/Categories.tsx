@@ -30,7 +30,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className='relative mx-auto max-w-[1350px]'>
+      <div className='relative mx-auto max-w-[1350px] mt-8'>
         <div className='absolute right-0 top-5 z-30'>
           <button
             onClick={scrollLeft}

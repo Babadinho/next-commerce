@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Header from '@/layouts/Header';
 import Categories from '@/layouts/Categories';
+import Main from '@/layouts/Main';
+import { GetServerSideProps } from 'next';
 
 export default function Home() {
   return (
@@ -19,6 +21,15 @@ export default function Home() {
         {' '}
         <Categories />
       </div>
+      <Main />
     </>
   );
 }
+
+// export const getServerSideProps: GetServerSideProps = async () => {
+// const categories = await getCategories()
+
+//   return {
+//     pros: {},
+//   }
+// }
