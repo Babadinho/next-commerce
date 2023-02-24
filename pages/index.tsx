@@ -4,8 +4,14 @@ import Header from '@/layouts/Header';
 import Categories from '@/layouts/Categories';
 import Main from '@/layouts/Main';
 import { GetServerSideProps } from 'next';
+import { fetchCategories } from '@/utils/fetchCategories';
 
-export default function Home() {
+interface Props {
+  categories: Category[];
+}
+
+export default function Home({ categories }: Props) {
+  console.log(categories);
   return (
     <>
       <Head>
@@ -19,17 +25,19 @@ export default function Home() {
       <Header />
       <div className='px-2 lg:px-0'>
         {' '}
-        <Categories />
+        <Categories categories={categories} />
       </div>
       <Main />
     </>
   );
 }
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-// const categories = await getCategories()
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  const categories = await fetchCategories();
 
-//   return {
-//     pros: {},
-//   }
-// }
+  return {
+    props: {
+      categories,
+    },
+  };
+};

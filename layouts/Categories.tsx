@@ -14,7 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 import React, { useRef } from 'react';
 
-const Categories = () => {
+const Categories = ({ categories }: { categories: Category[] }) => {
   const carousel = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -26,6 +26,21 @@ const Categories = () => {
     if (carousel.current) {
       carousel.current.scrollLeft += 400;
     }
+  };
+
+  const iconClassName =
+    'icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700';
+
+  const categoryIcons: { [key: string]: JSX.Element } = {
+    phones: <DevicePhoneMobileIcon className={iconClassName} />,
+    laptops: <ComputerDesktopIcon className={iconClassName} />,
+    accessories: <RadioIcon className={iconClassName} />,
+    gaming: <PlayCircleIcon className={iconClassName} />,
+    toys: <PuzzlePieceIcon className={iconClassName} />,
+    'audio & video': <VideoCameraIcon className={iconClassName} />,
+    televisions: <TvIcon className={iconClassName} />,
+    'fridge & freezer': <ExclamationTriangleIcon className={iconClassName} />,
+    dishwashers: <ArchiveBoxIcon className={iconClassName} />,
   };
 
   return (
@@ -50,69 +65,16 @@ const Categories = () => {
           ref={carousel}
           className='carousel scroll-smooth scrollbar-hide relative scr overflow-x-auto flex justify-start space-x-5 md:space-x-10'
         >
-          <Category
-            title='phones'
-            className='group'
-            icon={
-              <DevicePhoneMobileIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='laptops'
-            className='group'
-            icon={
-              <ComputerDesktopIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='accessories'
-            className='group'
-            icon={
-              <RadioIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='gaming'
-            className='group'
-            icon={
-              <PlayCircleIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='toys'
-            className='group'
-            icon={
-              <PuzzlePieceIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='audio & video'
-            className='group'
-            icon={
-              <VideoCameraIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='televisions'
-            className='group'
-            icon={
-              <TvIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='fridge and freezer'
-            className='group'
-            icon={
-              <ExclamationTriangleIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
-          <Category
-            title='dishwashers'
-            className='group'
-            icon={
-              <ArchiveBoxIcon className='icon h-10 w-10 md:w-20 md:h-20 group-hover:scale-75 transition-transform duration-700' />
-            }
-          />
+          {categories.map((category) => {
+            return (
+              <Category
+                key={category._id}
+                title={category.title}
+                className='group'
+                icon={categoryIcons[category.title]}
+              />
+            );
+          })}
         </div>
       </div>
     </>
