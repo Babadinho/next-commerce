@@ -13,7 +13,7 @@ const Button = ({ title, onClick, width, loading, padding, noIcon }: Props) => {
   return (
     <a
       href='#_'
-      className={`box-border relative z-30 inline-flex items-center justify-center ${
+      className={`box-border relative inline-flex items-center justify-center ${
         width ? width : 'w-auto'
       } ${padding} px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-violet-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-violet-500 ease focus:outline-none`}
       onClick={onClick}

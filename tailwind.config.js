@@ -14,6 +14,15 @@ module.exports = {
       fontFamily: {
         body: ['Poppins', 'sans-serif'],
       },
+      keyframes: {
+        moveInNav: {
+          '0%': { transform: 'translateY(-5rem)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'nav-slide': 'moveInNav 0.8s ease',
+      },
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],

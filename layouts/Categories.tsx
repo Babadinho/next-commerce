@@ -46,7 +46,7 @@ const Categories = ({ categories }: { categories: Category[] }) => {
   return (
     <>
       <div className='relative mx-auto max-w-[1250px] mt-8'>
-        <div className='absolute right-0 top-5 z-30'>
+        <div className='absolute right-0 top-5'>
           <button
             onClick={scrollLeft}
             className='p-2 m-2 rounded-full bg-[#f7f9fa]'
@@ -63,7 +63,7 @@ const Categories = ({ categories }: { categories: Category[] }) => {
 
         <div
           ref={carousel}
-          className='carousel scroll-smooth scrollbar-hide relative scr overflow-x-auto flex justify-start space-x-5 md:space-x-10'
+          className='carousel scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start space-x-5 md:space-x-10'
         >
           {categories.map((category) => {
             return (

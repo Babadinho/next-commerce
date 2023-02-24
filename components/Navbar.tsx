@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
@@ -8,12 +8,35 @@ import {
 } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
+  const [navScroll, setNavScroll] = useState(false);
+
+  // navbar scroll changeBackground function
+  const fixedNav = () => {
+    if (window.scrollY >= 66) {
+      setNavScroll(true);
+    } else {
+      setNavScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    fixedNav();
+    // adding the event when scroll change Logo
+    window.addEventListener('scroll', fixedNav);
+  });
+
   return (
-    <header className='sticky top-0 z-30 bg-[#f7f9fa] p-5'>
-      <div className='flex items-center justify-between max-w-[1250px] mx-auto'>
+    <header
+      className={`${
+        navScroll ? 'sticky animate-nav-slide' : 'relative'
+      } top-0 right-0 left-0 z-30 bg-[#f7f9fa] p-5 drop-shadow-sm`}
+    >
+      <div
+        className={`flex items-center justify-between max-w-[1250px] mx-auto`}
+      >
         <div className='flex items-center justify-center'>
           <Link href='/'>
-            <p className='relative cursor-pointer font-bold text-lg'>
+            <p className='relative cursor-pointer font-bold text-lg text-slate-800'>
               Next Commerce
             </p>
           </Link>

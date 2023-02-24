@@ -7,7 +7,7 @@ function classNames(...classes: string[]) {
 
 const Tabs = () => {
   return (
-    <div className='w-full max-w-md px-2 py-16 sm:px-0 mx-auto mt-10'>
+    <div className='w-full max-w-md px-2 py-16 sm:px-0 mx-auto mt-5 md:mt-10'>
       <Tab.Group>
         <Tab.List className='flex space-x-1 rounded-xl bg-violet-500 p-1'>
           <Tab

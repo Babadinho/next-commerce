@@ -11,7 +11,6 @@ interface Props {
 }
 
 export default function Home({ categories }: Props) {
-  console.log(categories);
   return (
     <>
       <Head>
