@@ -4,7 +4,7 @@ import createImageUrlBuilder from '@sanity/image-url';
 export const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   token: process.env.SANITY_API_TOKEN,
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'lfrz4r27',
   apiVersion: '2021-08-11', // or today's date for latest,
   useCdn: process.env.NODE_ENV === 'production',
 };
