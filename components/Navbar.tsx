@@ -29,7 +29,7 @@ const Navbar = () => {
     <header
       className={`${
         navScroll ? 'sticky animate-nav-slide' : 'relative'
-      } top-0 right-0 left-0 z-30 bg-[#f7f9fa] p-5 drop-shadow-sm`}
+      } top-0 right-0 left-0 z-30 bg-white p-5 drop-shadow-sm`}
     >
       <div
         className={`flex items-center justify-between max-w-[1250px] mx-auto`}
