@@ -24,7 +24,7 @@ const Product = () => {
                 $25.00
               </p>
             </div>
-            <div className='bg-[#E7ECEE] p-2 rounded-full text-slate-700 cursor-pointer hover:bg-[#e7eceebb] hover:text-slate-800'>
+            <div className='bg-violet-500 p-2 rounded-full text-gray-200 cursor-pointer hover:bg-violet-600 hover:text-gray-100'>
               <ShoppingCartIcon className='h-7 w-7 md:h-8 md:w-8' />
             </div>
           </div>
@@ -53,7 +53,7 @@ const Product = () => {
                 $25.00
               </p>
             </div>
-            <div className='bg-[#E7ECEE] p-2 rounded-full text-slate-700 cursor-pointer hover:bg-[#e7eceebb] hover:text-slate-800'>
+            <div className='bg-violet-500 p-2 rounded-full text-gray-200 cursor-pointer hover:bg-violet-600 hover:text-gray-100'>
               <ShoppingCartIcon className='h-7 w-7 md:h-8 md:w-8' />
             </div>
           </div>
