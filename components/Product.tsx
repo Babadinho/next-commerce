@@ -3,8 +3,8 @@ import React from 'react';
 
 const Product = () => {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-40 px-2 md:px-0 max-w-[1250px] mx-auto mb-10'>
-      <div className='mx-auto w-full md:w-80 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
+    <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 px-2 md:px-0 max-w-[1250px] mx-auto mb-10'>
+      <div className='mx-auto w-full md:w-72 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
         <img
           className='h-40 md:h-48 w-full object-cover object-center'
           src='https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
@@ -31,7 +31,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className='mx-auto w-full md:w-80 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
+      <div className='mx-auto w-full md:w-72 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
         <img
           className='h-40 md:h-48 w-full object-cover object-center'
           src='https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
