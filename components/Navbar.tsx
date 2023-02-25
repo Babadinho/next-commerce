@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className='flex items-center justify-center'>
             <Link href='/'>
               <p className='relative cursor-pointer font-bold text-lg text-slate-800'>
-                Next Commerce
+                Commerce
               </p>
             </Link>
           </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <div className='scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start md:justify-center max-w-[1250px] mx-auto bg-white space-x-4 text-sm capitalize p-2 border-b border-gray-300 whitespace-nowrap'>
+      <div className='scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start md:justify-center mx-auto bg-[#f7f7f7] space-x-4 text-sm capitalize p-2 border-b border-gray-300 whitespace-nowrap'>
         <a href='#' className='headerLink flex items-center justify-center'>
           <FireIcon className='h-4' />
           new deals
@@ -101,6 +101,9 @@ const Navbar = () => {
         </a>
         <a href='#' className='headerLink flex items-center justify-center'>
           top picks
+        </a>
+        <a href='#' className='headerLink flex items-center justify-center'>
+          popular
         </a>
         <a href='#' className='headerLink flex items-center justify-center'>
           help & contact
