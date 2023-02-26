@@ -5,7 +5,7 @@ const Product = () => {
   return (
     <>
       <div className='max-w-[1250px] mx-2 md:mx-auto bg-pink-900 text-white py-4 pl-5 mb-4 mt-10 md:mt-16'>
-        <h2 className='text-xl'>Popular</h2>
+        <h2 className='text-lg md:text-xl'>Popular</h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 px-2 md:px-0 max-w-[1250px] mx-auto mb-10'>
         <div className='mx-auto w-full md:w-72 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
@@ -68,7 +68,7 @@ const Product = () => {
       </div>
 
       <div className='max-w-[1250px] mx-2 md:mx-auto bg-sky-900 text-white py-4 pl-5 mb-4 mt-10 md:mt-16'>
-        <h2 className='text-xl'>Recent</h2>
+        <h2 className='text-lg md:text-xl'>Recent</h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 px-2 md:px-0 max-w-[1250px] mx-auto mb-10'>
         <div className='mx-auto w-full md:w-72 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
@@ -131,7 +131,7 @@ const Product = () => {
       </div>
 
       <div className='max-w-[1250px] mx-2 md:mx-auto bg-gray-800 text-white py-4 pl-5 mb-4 mt-10 md:mt-16'>
-        <h2 className='text-xl'>Good Deals</h2>
+        <h2 className='text-lg md:text-xl'>Good Deals</h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 px-2 md:px-0 max-w-[1250px] mx-auto mb-10'>
         <div className='mx-auto w-full md:w-72 transform overflow-hidden rounded-sm bg-white shadow-sm duration-300'>
