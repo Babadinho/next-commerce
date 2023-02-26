@@ -15,7 +15,7 @@ const Button = ({ title, onClick, width, loading, padding, noIcon }: Props) => {
       href='#_'
       className={`box-border relative inline-flex items-center justify-center ${
         width ? width : 'w-auto'
-      } ${padding} px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-violet-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-violet-500 ease focus:outline-none`}
+      } ${padding} px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-sky-900 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-sky-300 ring-offset-indigo-200 hover:ring-offset-sky-900 ease focus:outline-none`}
       onClick={onClick}
     >
       <span className='absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0'></span>

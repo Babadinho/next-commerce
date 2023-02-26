@@ -74,7 +74,7 @@ const Navbar = () => {
             <MagnifyingGlassIcon className='headerIcon md:hidden' />
             <Link href='/'>
               <div className='relative cursor-pointer'>
-                <span className='absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full bg-violet-500 text-[10px] text-white'>
+                <span className='absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full bg-sky-900 text-[10px] text-white'>
                   5
                 </span>
                 <ShoppingBagIcon className='headerIcon' />
@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <div className='scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start md:justify-center mx-auto bg-[#f7f7f7] space-x-4 text-sm capitalize p-2 border-b border-gray-300 whitespace-nowrap'>
+      <div className='scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start md:justify-center mx-auto bg-sky-900 space-x-4 text-sm capitalize p-2 border-b border-gray-300 whitespace-nowrap'>
         <a href='#' className='headerLink flex items-center justify-center'>
           <FireIcon className='h-4' />
           new deals

@@ -12,7 +12,7 @@
 
 @layer components {
   .headerLink {
-    @apply cursor-pointer opacity-90 transition hover:opacity-100;
+    @apply cursor-pointer opacity-90 transition hover:opacity-100 text-white;
   }
   .headerIcon {
     @apply h-6 w-6 cursor-pointer opacity-75 transition hover:opacity-100;
