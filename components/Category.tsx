@@ -13,7 +13,7 @@ const Category = ({ title, icon, onClick, className }: Props) => {
       className={`flex flex-col items-center  mt-20 space-y-4 cursor-pointer ${className}`}
     >
       <a
-        className={`relative w-20 h-20 md:w-32 md:h-32 rounded-full flex items-center justify-center transition-all duration-300 bg-[#f7f7f7] ease text-slate-700 hover:text-slate-800 shadow-sm border border-gray-200`}
+        className={`relative w-20 h-20 md:w-32 md:h-32 rounded-full flex items-center justify-center transition-all duration-300 bg-[#f7f7f7] ease text-sky-900 hover:text-sky-800 shadow-sm border border-gray-200`}
       >
         {icon}
       </a>

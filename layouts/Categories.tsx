@@ -45,7 +45,7 @@ const Categories = ({ categories }: { categories: Category[] }) => {
 
   return (
     <>
-      <div className='relative mx-auto max-w-[1250px] mt-4'>
+      <div className='relative mx-auto max-w-[1250px] mt-3'>
         <div className='absolute right-0 top-5 z-10'>
           <button
             onClick={scrollLeft}

@@ -2,15 +2,17 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Header from '@/layouts/Header';
 import Categories from '@/layouts/Categories';
-import Main from '@/layouts/Main';
 import { GetServerSideProps } from 'next';
 import { fetchCategories } from '@/utils/fetchCategories';
+import Products from '@/layouts/Poducts';
+import { fetchProducts } from '@/utils/fetchProducts';
 
 interface Props {
   categories: Category[];
+  products: Product[];
 }
 
-export default function Home({ categories }: Props) {
+export default function Home({ categories, products }: Props) {
   return (
     <>
       <Head>
@@ -19,24 +21,24 @@ export default function Home({ categories }: Props) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <Navbar />
       <Header />
       <div className='px-2 lg:px-0'>
-        {' '}
         <Categories categories={categories} />
       </div>
-      <Main />
+      <Products />
     </>
   );
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const categories = await fetchCategories();
+  const products = await fetchProducts();
 
   return {
     props: {
       categories,
+      products,
     },
   };
 };
