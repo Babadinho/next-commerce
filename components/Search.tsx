@@ -2,13 +2,13 @@ import React from 'react';
 
 const Search = () => {
   return (
-    <div className='hidden md:block justify-center'>
+    <div className='justify-center'>
       <div className='xl:w-96'>
         <div className='relative flex w-full flex-wrap items-stretch'>
           <input
             type='search'
-            className='relative m-0 -mr-px block w-[1%] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200'
-            placeholder='Search'
+            className='relative m-0 -mr-px block w-[1%] min-w-0 flex-auto rounded-l border border-solid border-sky-900 bg-transparent bg-clip-padding px-3 py-1.5 text-sm font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200 italic'
+            placeholder='Search products'
             aria-label='Search'
             aria-describedby='button-addon1'
           />

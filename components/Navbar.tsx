@@ -34,23 +34,25 @@ const Navbar = () => {
       <header
         className={`${
           navScroll ? 'sticky animate-nav-slide' : 'relative'
-        } top-0 right-0 left-0 z-30 bg-[#f7f7f7] p-4`}
+        } top-0 right-0 left-0 z-30 bg-[#f7f7f7] p-3 shadow-md`}
       >
         <div
           className={`flex items-center justify-between max-w-[1250px] mx-auto`}
         >
           <div className='flex items-center justify-center'>
             <Link href='/'>
-              <p className='relative cursor-pointer font-bold text-lg text-slate-800'>
+              <p className='relative cursor-pointer font-bold text-lg text-sky-900'>
                 Commerce
               </p>
             </Link>
           </div>
 
-          <Search />
+          <div className='hidden md:block '>
+            <Search />
+          </div>
 
           <div className='flex items-center justify-center gap-x-4'>
-            <MagnifyingGlassIcon className='headerIcon md:hidden' />
+            {/* <MagnifyingGlassIcon className='headerIcon md:hidden' /> */}
             <Link href='/'>
               <div className='relative cursor-pointer'>
                 <span className='absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full bg-sky-900 text-[10px] text-white'>
@@ -62,6 +64,9 @@ const Navbar = () => {
 
             <UserIcon className='headerIcon h-7 w-7' />
           </div>
+        </div>
+        <div className='md:hidden mt-2'>
+          <Search />
         </div>
       </header>
       <div className='scroll-smooth scrollbar-hide relative overflow-x-auto flex justify-start md:justify-center mx-auto bg-sky-900 space-x-4 text-sm capitalize p-2 border-b border-gray-300 whitespace-nowrap'>
